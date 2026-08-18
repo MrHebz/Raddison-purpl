@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radisson Purpl | Luxury Hotels & Resorts</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">Radisson <span>Purpl</span></div>
+        <nav>
+            <ul>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#offers">Offers</a></li>
+            </ul>
+        </nav>
+        <button class="btn-nav">Sign In</button>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Feel The Difference</h1>
+        <p>Minimalist Luxury Across The Globe</p>
+
+        <!-- BOOKING WIDGET -->
+        <form class="booking-widget" id="bookingForm">
+            <div class="field-group">
+                <label for="destination">Destination</label>
+                <input type="text" id="destination" placeholder="Where to?" required>
+            </div>
+            <div class="field-group">
+                <label for="checkin">Check-in</label>
+                <input type="date" id="checkin" required>
+            </div>
+            <div class="field-group">
+                <label for="checkout">Check-out</label>
+                <input type="date" id="checkout" required>
+            </div>
+            <div class="field-group">
+                <label for="guests">Guests</label>
+                <select id="guests">
+                    <option value="1">1 Adult</option>
+                    <option value="2" selected>2 Adults</option>
+                    <option value="3">2 Adults, 1 Child</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-search">Search</button>
+        </form>
+    </section>
+
+    <!-- DESTINATIONS SECTION -->
+    <section class="section" id="destinations">
+        <div class="section-header">
+            <h2>Featured <span>Purpl</span> Escapes</h2>
+        </div>
+
+        <div class="grid">
+            <!-- Card 1 -->
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Radisson Purpl Tokyo" class="card-img">
+                <div class="card-body">
+                    <h3>Radisson Purpl, Tokyo</h3>
+                    <p>Sleek urban sanctuary overlooking the vibrant skyline of Ginza.</p>
+                    <div class="card-footer">
+                        <div class="price">$340 <span>/ night</span></div>
+                        <button class="btn-nav" onclick="selectDestination('Tokyo')">Book</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80" alt="Radisson Purpl Maldives" class="card-img">
+                <div class="card-body">
+                    <h3>Radisson Purpl Resort, Maldives</h3>
+                    <p>Secluded overwater villas with private infinity pools and ambient night lighting.</p>
+                    <div class="card-footer">
+                        <div class="price">$850 <span>/ night</span></div>
+                        <button class="btn-nav" onclick="selectDestination('Maldives')">Book</button>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=600&q=80" alt="Radisson Purpl Zurich" class="card-img">
+                <div class="card-body">
+                    <h3>Radisson Purpl, Zurich</h3>
+                    <p>Modernist architecture meets alpine tranquility near Lake Zurich.</p>
+                    <div class="card-footer">
+                        <div class="price">$420 <span>/ night</span></div>
+                        <button class="btn-nav" onclick="selectDestination('Zurich')">Book</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Radisson Rewards</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 Radisson Purpl Hotel Group. All rights reserved.</p>
+    </footer>
